@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "iron_nugget": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_nugget"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": ["craftablechainmail:chainmail_plate"]
+    }
+}

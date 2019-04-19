@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "chainmail_plate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "craftablechainmail:chainmail_plate"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "craftablechainmail:chainmail_helmet",
+            "craftablechainmail:chainmail_chestplate",
+            "craftablechainmail:chainmail_leggings",
+            "craftablechainmail:chainmail_boots"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "result": {
+        "item": "minecraft:chainmail_leggings"
+    },
+    "pattern": [
+        "ppp",
+        "p p",
+        "p p"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "p": {
+            "item": "craftablechainmail:chainmail_plate"
+        }
+    }
+}

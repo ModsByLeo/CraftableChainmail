@@ -1,0 +1,16 @@
+[
+{
+  "modid": "craftablechainmail",
+  "name": "Craftable Chainmail",
+  "description": "Adds a crafting recipe for chainmail armor.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Moddy10/Leo40Git"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
