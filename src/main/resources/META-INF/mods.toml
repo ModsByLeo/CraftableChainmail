@@ -1,7 +1,7 @@
 modLoader="javafml"
 loaderVersion="[28,)"
-issueTrackerURL="http://github.com/Leo40Git/CraftableChainmail/issues"
-showAsResourcePack=false
+issueTrackerURL="https://github.com/Leo40Git/CraftableChainmail/issues"
+updateJSONURL="https://raw.githubusercontent.com/Leo40Git/CraftableChainmail/meta/update.json"
 [[mods]]
     modId="craftablechainmail"
     version="${version}"

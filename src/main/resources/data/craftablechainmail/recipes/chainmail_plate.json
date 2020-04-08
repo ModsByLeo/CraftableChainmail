@@ -3,17 +3,13 @@
         "item": "craftablechainmail:chainmail_plate"
     },
     "pattern": [
-        "n n",
-        " i ",
-        "n n"
+        "nn",
+        "nn",
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
         "n": {
             "tag": "forge:nuggets/iron"
-        },
-        "i": {
-            "tag": "forge:ingots/iron"
         }
     }
 }
