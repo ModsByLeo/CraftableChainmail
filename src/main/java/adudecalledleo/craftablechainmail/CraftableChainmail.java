@@ -35,17 +35,19 @@ public class CraftableChainmail {
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
-        Config.loadConfig(FMLPaths.CONFIGDIR.get().resolve(MODID + ".toml"));
+        Config.loadConfig(FMLPaths.CONFIGDIR.get().resolve(MODID + "-common.toml"));
     }
 
     private void setup(FMLCommonSetupEvent e) {
-        if (Config.replaceChainmailRepairMaterial.get())
-            DeferredWorkQueue.runLater(CraftableChainmail::doReplaceChainmailRepairMaterial);
+        DeferredWorkQueue.runLater(CraftableChainmail::doReplaceChainmailRepairMaterial);
     }
 
     private static final String OBSFUCATED_FIELD_NAME_ARMORMATERIAL_REPAIRMATERIAL = "field_200914_m";
 
     static void doReplaceChainmailRepairMaterial() {
+        if (!Config.replaceChainmailRepairMaterial.get())
+            return;
+
         ObfuscationReflectionHelper.setPrivateValue(
                 ArmorMaterial.class,
                 ArmorMaterial.CHAIN,
