@@ -2,3 +2,5 @@
 Simple Minecraft mod that adds a recipe for chain armor.
 
 This branch is for Minecraft **1.12.2**.
+
+**NOTE:** Due to Forge dropping support for 1.12 completely, this branch is *deprecated*.
