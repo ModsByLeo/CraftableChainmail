@@ -1,13 +1,21 @@
 modLoader="javafml"
 loaderVersion="[28,)"
-issueTrackerURL="http://my.issue.tracker/"
+issueTrackerURL="http://github.com/Leo40Git/CraftableChainmail/issues"
+showAsResourcePack=false
 [[mods]]
-modId="craftablechainmail"
-version="${file.jarVersion}"
-displayName="Leo's Craftable Chainmail"
-authors="ADudeCalledLeo (Leo40Git@github)"
-description='''Adds a crafting recipe for chainmail armor.'''
-[[dependencies.examplemod]]
+    modId="craftablechainmail"
+    version="${version}"
+    displayName="Leo's Craftable Chainmail"
+    logoFile="craftablechainmail.png"
+    authors="ADudeCalledLeo (Leo40Git@github)"
+    description='''Adds a crafting recipe for chainmail armor.'''
+[[dependencies.craftablechainmail]]
+    modId="forge"
+    mandatory=true
+    versionRange="[28,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.craftablechainmail]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.14.4]"
