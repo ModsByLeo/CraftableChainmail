@@ -4,7 +4,7 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.LazyLoadBase;
+import net.minecraft.util.LazyValue;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -53,7 +53,7 @@ public class CraftableChainmail {
         ObfuscationReflectionHelper.setPrivateValue(
                 ArmorMaterial.class,
                 ArmorMaterial.CHAIN,
-                new LazyLoadBase<>(() -> Ingredient.fromItems(CHAINMAIL_PLATE.get())),
+                new LazyValue<>(() -> Ingredient.fromItems(CHAINMAIL_PLATE.get())),
                 OBSFUCATED_FIELD_NAME_ARMORMATERIAL_REPAIRMATERIAL);
     }
 }

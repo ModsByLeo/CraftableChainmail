@@ -43,7 +43,7 @@ public class Config {
                 CraftableChainmail.MODID, e.getConfig().getFileName());
     }
 
-    public static void onFileChange(final ModConfig.ConfigReloading e) {
+    public static void onFileChange(final ModConfig.Reloading e) {
         CraftableChainmail.LOGGER.fatal(Logging.CORE, "{}'s config just got changed on the file system!",
                 CraftableChainmail.MODID);
     }
